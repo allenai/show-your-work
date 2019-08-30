@@ -1,0 +1,78 @@
+{
+    "SEED": {
+        "sampling strategy": "integer",
+        "bounds": [0, 100000]
+    },
+    "PROJECTION_DIM": {
+        "sampling strategy": "integer",
+        "bounds": [64, 300]
+    }, 
+    "PREMISE_ENCODER_BIDIRECTIONAL": {
+        "sampling strategy": "choice",
+        "bounds": [0, 1]
+    },
+    "PREMISE_ENCODER_NUM_LAYERS": {
+        "sampling strategy": "choice",
+        "bounds": [1, 2, 3]
+    },
+    "PREMISE_ENCODER_HIDDEN_SIZE": {
+        "sampling strategy": "integer",
+        "bounds": [64, 512]
+    },
+    "PHRASE_PROBABILITY_NUM_LAYERS": {
+        "sampling strategy": "choice",
+        "bounds": [1, 2, 3]
+    },
+    "PHRASE_PROBABILITY_HIDDEN_DIMS": {
+        "sampling strategy": "integer",
+        "bounds": [64, 512]
+    },
+    "PHRASE_PROBABILITY_ACTIVATION": {
+        "sampling strategy": "choice",
+        "bounds": ["relu", "tanh"]
+    },
+    "PHRASE_PROBABILITY_HIDDEN_SIZE": {
+        "sampling strategy": "integer",
+        "bounds": [64, 512]
+    },
+    "PHRASE_PROBABILITY_DROPOUT": {
+        "sampling strategy": "uniform",
+        "bounds": [0, 0.5]
+    },
+
+    "EDGE_PROBABILITY_NUM_LAYERS": {
+        "sampling strategy": "choice",
+        "bounds": [1, 2, 3]
+    },
+    "EDGE_PROBABILITY_HIDDEN_DIMS": {
+        "sampling strategy": "integer",
+        "bounds": [64, 512]
+    },
+    "EDGE_PROBABILITY_ACTIVATION": {
+        "sampling strategy": "choice",
+        "bounds": ["relu", "tanh"]
+    },
+    "EDGE_PROBABILITY_HIDDEN_SIZE": {
+        "sampling strategy": "integer",
+        "bounds": [64, 512]
+    },
+    "EDGE_PROBABILITY_DROPOUT": {
+        "sampling strategy": "uniform",
+        "bounds": [0, 0.5]
+    },
+    "EDGE_EMBEDDING_SIZE": {
+        "sampling strategy": "integer",
+        "bounds": [64, 300]
+    },
+    "BATCH_SIZE": 16,
+    "NUM_EPOCHS": 140,
+    "GRAD_NORM": {
+        "sampling strategy": "uniform",
+        "bounds": [5, 10]
+    },
+    "LEARNING_RATE": {
+        "sampling strategy": "loguniform",
+        "bounds": [1e-6, 1e-1]
+    },
+    "CUDA_DEVICE": 0
+}

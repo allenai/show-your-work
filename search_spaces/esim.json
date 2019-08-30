@@ -1,0 +1,65 @@
+{
+    "CUDA_DEVICE": 0,
+    "EVALUATE_ON_TEST": 1,
+    "BATCH_SIZE": 32,
+    "DROPOUT": {
+        "sampling strategy": "uniform",
+        "bounds": [0, 0.5]
+    },
+    "ENCODER_HIDDEN_SIZE": {
+        "sampling strategy": "integer",
+        "bounds": [64, 512]
+    },
+    "ENCODER_NUM_LAYERS": {
+        "sampling strategy": "choice",
+        "choices": [1,2,3]
+    },
+    "PROJECTION_FEEDFORWARD_NUM_LAYERS": {
+        "sampling strategy": "choice",
+        "choices": [1,2,3]
+    },
+    "PROJECTION_FEEDFORWARD_HIDDEN_DIM": {
+        "sampling strategy": "integer",
+        "bounds": [64, 512]
+    },
+    "PROJECTION_FEEDFORWARD_ACTIVATION": {
+        "sampling strategy": "choice",
+        "choices": ["relu", "tanh"]
+    },
+    "INFERENCE_ENCODER_HIDDEN_SIZE": {
+        "sampling strategy": "integer",
+        "bounds": [64, 512]
+    },
+    "INFERENCE_ENCODER_NUM_LAYERS": {
+        "sampling strategy": "choice",
+        "choices": [1,2,3]
+    },
+    "OUTPUT_FEEDFORWARD_NUM_LAYERS": {
+        "sampling strategy": "choice",
+        "choices": [1,2,3]
+    },
+    "OUTPUT_FEEDFORWARD_HIDDEN_DIM": {
+        "sampling strategy": "integer",
+        "bounds": [64, 512]
+    },
+    "OUTPUT_FEEDFORWARD_ACTIVATION": {
+        "sampling strategy": "choice",
+        "choices": ["relu", "tanh"]
+    },
+    "OUTPUT_FEEDFORWARD_DROPOUT": {
+        "sampling strategy": "uniform",
+        "bounds": [0, 0.5]
+    },
+    "SEED": {
+        "sampling strategy": "integer",
+        "bounds": [0, 100000]
+    },
+    "GRAD_NORM": {
+        "sampling strategy": "uniform",
+        "bounds": [5, 10]
+    },
+    "LEARNING_RATE": {
+        "sampling strategy": "loguniform",
+        "bounds": [1e-6, 1e-1]
+    }
+}

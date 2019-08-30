@@ -1,0 +1,82 @@
+{
+    "CUDA_DEVICE": 0,
+    "EVALUATE_ON_TEST": 1,
+    "NUM_EPOCHS": 50,
+    "SEED": {
+        "sampling strategy": "integer",
+        "bounds": [0, 10000]
+    },
+    "EMBEDDINGS": ["GLOVE"],
+    "FREEZE_EMBEDDINGS": null,
+    "THROTTLE": null,
+    "GRAD_NORM": {
+        "sampling strategy": "uniform",
+        "bounds": [5, 10]
+    },
+    "EMBEDDING_DROPOUT": {
+        "sampling strategy": "uniform",
+        "bounds": [0, 0.5]
+    },
+    "PRE_ENCODE_FEEDFORWARD_LAYERS": {
+        "sampling strategy": "choice",
+        "choices": [1, 2, 3]
+    },
+    "PRE_ENCODE_FEEDFORWARD_HIDDEN_DIMS": {
+        "sampling strategy": "integer",
+        "bounds": [64, 512]
+    },
+    "PRE_ENCODE_FEEDFORWARD_ACTIVATION": {
+        "sampling strategy": "choice",
+        "choices": ["relu", "tanh"]
+    },
+    "PRE_ENCODE_FEEDFORWARD_DROPOUT": {
+        "sampling strategy": "uniform",
+        "bounds": [0, 0.5]
+    },
+    "ENCODER_HIDDEN_SIZE": {
+        "sampling strategy": "integer",
+        "bounds": [64, 512]
+    },
+    "ENCODER_NUM_LAYERS":  {
+        "sampling strategy": "choice",
+        "choices": [1, 2, 3]
+    },
+    "INTEGRATOR_HIDDEN_SIZE": {
+        "sampling strategy": "integer",
+        "bounds": [64, 512]
+    }, 
+    "INTEGRATOR_NUM_LAYERS": {
+        "sampling strategy": "choice", 
+        "choices": [1, 2, 3]
+    },
+    "INTEGRATOR_DROPOUT": {
+        "sampling strategy": "uniform",
+        "bounds": [0, 0.5]
+    },
+    "ELMO_DROPOUT": {
+        "sampling strategy": "uniform",
+        "bounds": [0, 0.5]
+    },
+    "OUTPUT_NUM_LAYERS": {
+        "sampling strategy": "choice",
+        "choices": [1, 2, 3]
+    },
+    "OUTPUT_DIM": {
+        "sampling strategy": "integer",
+        "bounds": [64, 512]
+    },
+    "OUTPUT_DROPOUT": {
+        "sampling strategy": "uniform",
+        "bounds": [0, 0.5]
+    },
+    "POOL_SIZES": {
+        "sampling strategy": "integer",
+        "bounds": [3, 7]
+    },
+    "LEARNING_RATE": {
+        "sampling strategy": "loguniform",
+        "bounds": [1e-6, 1e-1]
+    },
+    "BATCH_SIZE": 64,
+    "USE_INTEGRATOR_OUTPUT_ELMO": 0
+}

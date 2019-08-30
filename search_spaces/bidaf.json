@@ -1,0 +1,101 @@
+{
+    "CUDA_DEVICE": 0,
+    "EVALUATE_ON_TEST": 1,
+    "SEED": {
+        "sampling strategy": "integer",
+        "bounds": [0, 100000]
+    },
+    "LEARNING_RATE": {
+        "sampling strategy": "loguniform",
+        "bounds": [1e-6, 1e-1]
+    },
+    "ALPHA": {
+        "sampling strategy": "loguniform",
+        "bounds": [1e-3, 1]
+    },
+    "DROPOUT": {
+        "sampling strategy": "uniform",
+        "bounds": [0, 0.5]
+    },
+    "ENCODER_DROPOUT": {
+        "sampling strategy": "uniform",
+        "bounds": [0, 0.5]
+    },
+    "BATCH_SIZE": 64,
+    "NUM_ENCODER_LAYERS": {
+        "sampling strategy": "choice",
+        "choices": [1, 2, 3]
+    },
+    "MAX_FILTER_SIZE": {
+        "sampling strategy": "integer",
+        "bounds": [3, 6]
+    },
+    "NUM_FILTERS": {
+        "sampling strategy": "integer",
+        "bounds": [16, 64]
+    },
+    "ENCODER_HIDDEN_SIZE": {
+        "sampling strategy": "integer",
+        "bounds": [64, 512]
+    },
+    "PHRASE_LAYER_HIDDEN_SIZE": {
+        "sampling strategy": "integer",
+        "bounds": [64, 512]
+    },
+    "MODELING_LAYER_HIDDEN_SIZE": {
+        "sampling strategy": "integer",
+        "bounds": [64, 512]
+    },
+    "SPAN_END_ENCODER_HIDDEN_SIZE": {
+        "sampling strategy": "integer",
+        "bounds": [64, 512]
+    },
+    "GRAD_NORM": {
+        "sampling strategy": "uniform",
+        "bounds": [5, 10]
+    },
+    "CHARACTER_DROPOUT": {
+        "sampling strategy": "uniform",
+        "bounds": [0, 0.5]
+    },
+    "PHRASE_LAYER_DROPOUT": {
+        "sampling strategy": "uniform",
+        "bounds": [0, 0.5]
+    },
+    "MODELING_LAYER_DROPOUT": {
+        "sampling strategy": "uniform",
+        "bounds": [0, 0.5]
+    },
+    "SPAN_END_ENCODER_DROPOUT": {
+        "sampling strategy": "uniform",
+        "bounds": [0, 0.5]
+    },
+    "NUM_HIGHWAY_LAYERS": {
+        "sampling strategy": "choice",
+        "choices": [1, 2, 3]
+    },
+    "NUM_PHRASE_LAYERS": {
+        "sampling strategy": "choice",
+        "choices": [1, 2, 3]
+    },
+    "NUM_MODELING_LAYERS": {
+        "sampling strategy": "choice",
+        "choices": [1, 2, 3]
+    },
+    "SPAN_END_ENCODER_NUM_LAYERS": {
+        "sampling strategy": "choice",
+        "choices": [1, 2, 3]
+    },
+    "CHARACTER_EMBEDDING_DIM": {
+        "sampling strategy": "integer",
+        "bounds": [16, 64]
+    },
+    "BETA_1": {
+        "sampling strategy": "uniform",
+        "bounds": [0.9, 1.0]
+    },
+    "BETA_2": {
+        "sampling strategy": "uniform",
+        "bounds": [0.9, 1.0]
+    }
+}

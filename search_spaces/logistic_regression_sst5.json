@@ -1,0 +1,32 @@
+{
+    "penalty": {
+        "sampling strategy": "choice", 
+        "choices": ["l1", "l2"]
+    },
+
+    "C": {
+        "sampling strategy": "uniform",
+        "bounds": [0, 1]
+    },
+    "solver": "liblinear",
+    "tol": {
+        "sampling strategy": "loguniform",
+        "bounds": [10e-5, 10e-3]
+    },
+    "stopwords": {
+        "sampling strategy": "choice",
+        "choices": [0, 1]
+    },
+    "weight": {
+        "sampling strategy": "choice",
+        "choices": ["tf", "tf-idf", "binary"]
+    },
+    "ngram_range": {
+        "sampling strategy": "choice",
+        "choices": [["1", "2"], ["1", "3"], ["2", "3"]]
+    },
+    "random_state": {
+        "sampling strategy": "integer",
+        "bounds": [0, 100000]
+    }
+}
