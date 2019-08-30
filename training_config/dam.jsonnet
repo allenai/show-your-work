@@ -1,4 +1,4 @@
-// Configuraiton for a textual entailment model based on:
+// Configuration for a textual entailment model based on:
 //  Parikh, Ankur P. et al. “A Decomposable Attention Model for Natural Language Inference.” EMNLP (2016).
 {
   "numpy_seed": std.extVar("SEED"),
@@ -27,7 +27,7 @@
         "tokens": {
             "type": "embedding",
             "projection_dim": std.parseInt(std.extVar("PROJECTION_DIM")),
-            "pretrained_file": "https://s3-us-west-2.amazonaws.com/allennlp/datasets/glove/glove.6B.300d.txt.gz",
+            "pretrained_file": "https://s3-us-west-2.amazonaws.com/allennlp/datasets/glove/glove.840B.300d.txt.gz",
             "embedding_dim": 300,
             "trainable": false
         }
