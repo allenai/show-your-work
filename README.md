@@ -1,6 +1,18 @@
 # show-your-work
 Code for the "Show Your Work" paper, EMNLP 2019.
 
+## Citation
+If you use this repository for your research, please cite:
+
+```
+@inproceedings{showyourwork,
+ author = {Jesse Dodge and Suchin Gururangan and Dallas Card and Roy Schwartz and Noah A. Smith},
+ title = {Show Your Work: Improved Reporting of Experimental Results},
+ year = {2019},
+ booktitle = {Proceedings of EMNLP},
+}
+```
+
 ## Installation
 
 First, clone this repository.
