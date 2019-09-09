@@ -1,5 +1,5 @@
 # show-your-work
-Code for the "Show Your Work" (paper)[https://arxiv.org/abs/1909.03004], EMNLP 2019.
+Code for the "Show Your Work" [paper](https://arxiv.org/abs/1909.03004), EMNLP 2019.
 
 ## Citation
 If you use this repository for your research, please cite:
